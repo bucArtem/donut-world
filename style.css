@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    font-family: "Balsamiq Sans";
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    margin-left: 20%;
+    color: #2977AF;
+    cursor: pointer;
+    
+}
+
+.bin{
+    width: 30px;
+    height: 30px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.main2{
+    /* SWEAT */
+
+font-style: normal;
+font-weight: 100;
+font-size: 40px;
+/* identical to box height */
+
+background: linear-gradient(95.52deg, #17F5FD 31.48%, #D9189F 86.28%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-emphasis-color: transparent;
+
+}
+
+.main-img{
+    
+width: 669.71px;
+height: 438px;
+
+}
+
+
+.name1{
+    font-size: 100px;
+    
+}
+
+.name2{
+    font-size: 75px;
+   
+}
+
+.hr1{
+
+    background: linear-gradient(90deg, #57ACFB 0%, #FF0BAE 100%);
+    border: 5px;
+    border-radius: 5px;
+    height: 11px;
+    width: 1118px;
+    margin-top: 20px;
+
+
+}
+
+.logo{
+    margin-left: 60px;
+}
+
+.donuts1_1{
+    width: 250px;
+    height: 250px;
+
+
+}
+
+
+.donuts1_2{
+    width: 250px;
+    height: 250px;
+}
+
+
+.donuts_div{
+    display: flex;
+    justify-content: space-evenly       ;
+    flex-wrap: wrap;
+
+}
+
+.donuts1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.donuts1_1name{
+    color: #7910A3;
+    margin: 0;
+}
+
+.donuts1_2name{
+     color: #7910A3;
+    margin: 0;
+}
+
+.donuts1_3name{
+    margin: 0;
+}
+
+.buy_button{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background: #7300ff;
+    border-radius: 20px;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
