@@ -138,3 +138,63 @@ height: 438px;
     align-items: center;
     cursor: pointer;
 }
+
+.talloworderform{
+    background-color: #FF0BAE;
+    background-size: auto;
+    width: 900px;
+    height: auto;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    border-radius: 30px;
+    color:white;
+}
+
+
+.Email-Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.Email-inputs{
+
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.Email-input{
+
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.n-input{
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #17F5FD;
+}
+
+
+.e-input{
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #17F5FD;
+    box-shadow: none;
+}
+
+footer{
+    color: #D9189F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
