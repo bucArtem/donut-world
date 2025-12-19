@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    font-family: "Balsamiq Sans";
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #2977AF;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 60px;
+}
+
+.bin {
+    width: 30px;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #FF0BAE;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main2 {
+    font-size: 40px;
+    background: linear-gradient(95deg,#17F5FD,#D9189F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name1 { font-size: 100px; }
+.name2 { font-size: 75px; }
+
+.main-img {
+    width: 600px;
+}
+
+.hr1 {
+    height: 11px;
+    background: linear-gradient(90deg,#57ACFB,#FF0BAE);
+    border: none;
+    border-radius: 5px;
+}
+
+.donuts_div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.donuts1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.donuts1_1 {
+    width: 250px;
+    height: 250px;
+}
+
+.donuts1_1name,
+.donuts1_2name {
+    color: #7910A3;
+    margin: 0;
+}
+
+/* + − */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.controls button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: #7300ff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.controls button:active {
+    transform: scale(0.85);
+}
+
+.count {
+    font-size: 18px;
+}
+
+/* animation */
+.bump {
+    animation: bump 0.3s ease;
+}
+
+@keyframes bump {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* CART */
+.cart-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.cart-content {
+    background: white;
+    width: 300px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #D9189F;
+}
+
+/* TABS */
+.tab {
+    display: none;
+    padding: 40px;
+}
+
+.active-tab {
+    display: block;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 3 ПОНЧИКА В РЯД */
+.donuts_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}

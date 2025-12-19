@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин пончиків</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="nav-links">
+            <img class="logo" src="images/logo.png">
+
+            <a class="nav-link active" onclick="openTab('home')">Home</a>
+            <a class="nav-link" onclick="openTab('about')">About</a>
+            <a class="nav-link" onclick="openTab('contact')">Contact</a>
+        </div>
+
+        <div class="cart">
+            <img class="bin" src="images/bin.png">
+            <span id="cart-count">0</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main2">
+            <h1 class="name1">Sweat</h1>
+            <h2 class="name2">Dreams</h2>
+        </div>
+        <img class="main-img" src="images/Union.png">
+    </div>
+</header>
+
+<main>
+
+<!-- 🏠 HOME -->
+<section id="home" class="tab active-tab">
+
+    <hr class="hr1">
+
+    <div class="donuts_div">
+
+        <!-- 1 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Original</h3>
+            <h5 class="donuts1_2name">price: 5$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Original" data-price="5">+</button>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Chocolate</h3>
+            <h5 class="donuts1_2name">price: 7$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Chocolate" data-price="7">+</button>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Strawberry</h3>
+            <h5 class="donuts1_2name">price: 6$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Strawberry" data-price="6">+</button>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Vanilla</h3>
+            <h5 class="donuts1_2name">price: 6$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Vanilla" data-price="6">+</button>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Caramel</h3>
+            <h5 class="donuts1_2name">price: 8$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Caramel" data-price="8">+</button>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="donuts1">
+            <img class="donuts1_1" src="images/istockphoto-538335769-612x612.jpg">
+            <h3 class="donuts1_1name">Blueberry</h3>
+            <h5 class="donuts1_2name">price: 7$</h5>
+            <div class="controls">
+                <button class="minus">−</button>
+                <span class="count">0</span>
+                <button class="plus" data-name="Blueberry" data-price="7">+</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 📖 ABOUT -->
+<section id="about" class="tab">
+    <h2>About us</h2>
+    <p>We make fresh handmade donuts every day 🍩</p>
+</section>
+
+<!-- 📞 CONTACT -->
+<section id="contact" class="tab">
+    <h2>Contact</h2>
+    <p>Email: donuts@sweetdreams.com</p>
+    <p>Phone: +380 96 123 45 67</p>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <h3>Sweet Dreams</h3>
+    </div>
+</footer>
+
+<!-- CART -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <h2>Кошик</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: $<span id="cart-total">0</span></h3>
+        <button onclick="closeCart()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
